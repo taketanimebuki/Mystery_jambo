@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: e19994a1673964027bb846dd057d2841
+guid: f75f836db5ec146aebb09bd3228fad2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7385636327409867365
-    second: comment_hover_0
+      213: -9165803919605919355
+    second: Yamaya_half_Image_0
+  - first:
+      213: 2321899935928818018
+    second: Yamaya_half_Image_1
+  - first:
+      213: 1147461603599931439
+    second: Yamaya_half_Image_2
+  - first:
+      213: 5105069912504399793
+    second: Yamaya_half_Image_3
+  - first:
+      213: 6762873191631842799
+    second: Yamaya_half_Image_4
+  - first:
+      213: 4491164696574385350
+    second: Yamaya_half_Image_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,19 +125,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: comment_hover_0
+      name: Yamaya_half_Image_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 365
-        width: 1640
-        height: 347
+        x: 231
+        y: 1165
+        width: 268
+        height: 246
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +156,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56a5c77eb1d0f7660800000000000000
-      internalID: 7385636327409867365
+      spriteID: 581910bc5e58cc080800000000000000
+      internalID: -9165803919605919355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yamaya_half_Image_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 154
+        width: 1261
+        height: 1626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2691a0590bb093020800000000000000
+      internalID: 2321899935928818018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yamaya_half_Image_2
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1114
+        width: 149
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2859fbbf3a9cef00800000000000000
+      internalID: 1147461603599931439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yamaya_half_Image_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 820
+        width: 139
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7fb50a90ad8d640800000000000000
+      internalID: 5105069912504399793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yamaya_half_Image_4
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 686
+        width: 198
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed6a38265d8add50800000000000000
+      internalID: 6762873191631842799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yamaya_half_Image_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 356
+        width: 148
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc571f0f72d35e30800000000000000
+      internalID: 4491164696574385350
       vertices: []
       indices: 
       edges: []
@@ -174,7 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      comment_hover_0: 7385636327409867365
+      Yamaya_half_Image_0: -9165803919605919355
+      Yamaya_half_Image_1: 2321899935928818018
+      Yamaya_half_Image_2: 1147461603599931439
+      Yamaya_half_Image_3: 5105069912504399793
+      Yamaya_half_Image_4: 6762873191631842799
+      Yamaya_half_Image_5: 4491164696574385350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
