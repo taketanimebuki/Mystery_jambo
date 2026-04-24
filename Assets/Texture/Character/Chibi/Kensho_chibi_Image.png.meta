@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: e19994a1673964027bb846dd057d2841
+guid: 85a1bd526112f44d1816f28c82e1dce6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7385636327409867365
-    second: comment_hover_0
+      213: -4252873908000181363
+    second: Kensho_chibi_Image_0
+  - first:
+      213: -1147451937127471821
+    second: Kensho_chibi_Image_1
+  - first:
+      213: 1164889954032924296
+    second: Kensho_chibi_Image_2
+  - first:
+      213: 8481022336129932007
+    second: Kensho_chibi_Image_3
+  - first:
+      213: 706262300958432877
+    second: Kensho_chibi_Image_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,19 +122,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -139,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: comment_hover_0
+      name: Kensho_chibi_Image_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 365
-        width: 1640
-        height: 347
+        x: 280
+        y: 983
+        width: 308
+        height: 293
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56a5c77eb1d0f7660800000000000000
-      internalID: 7385636327409867365
+      spriteID: d833f1f96b1caf4c0800000000000000
+      internalID: -4252873908000181363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kensho_chibi_Image_1
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 185
+        width: 822
+        height: 1703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335eeaaea8e6310f0800000000000000
+      internalID: -1147451937127471821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kensho_chibi_Image_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1132
+        width: 137
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886bd88cd358a2010800000000000000
+      internalID: 1164889954032924296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kensho_chibi_Image_3
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 937
+        width: 65
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea9d2d51e4a2b570800000000000000
+      internalID: 8481022336129932007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kensho_chibi_Image_4
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 786
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e90ee12d52dc900800000000000000
+      internalID: 706262300958432877
       vertices: []
       indices: 
       edges: []
@@ -174,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      comment_hover_0: 7385636327409867365
+      Kensho_chibi_Image_0: -4252873908000181363
+      Kensho_chibi_Image_1: -1147451937127471821
+      Kensho_chibi_Image_2: 1164889954032924296
+      Kensho_chibi_Image_3: 8481022336129932007
+      Kensho_chibi_Image_4: 706262300958432877
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
