@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 93e014ea1283c4b08a9ad9812706e1d4
+  - enabled: 1
     path: Assets/Scenes/OpeningScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/FloorMapScene.unity
+    guid: c485eb48cb01f4fd0afa91c2dc2ee925
+  - enabled: 1
+    path: Assets/Scenes/CulpritSelectScene.unity
+    guid: c5cb7374d48c1448faf1726ddfecd5eb
+  - enabled: 1
+    path: Assets/Scenes/TrueEndingScene.unity
+    guid: cfbb8503443c04121ac83217a3454d48
+  - enabled: 1
+    path: Assets/Scenes/FalseEndingScene.unity
+    guid: 3b9aa99af5dd5414980e1c0dc070e069
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
