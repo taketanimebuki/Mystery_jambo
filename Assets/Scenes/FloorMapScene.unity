@@ -3295,12 +3295,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: HRI
           m_BoolArgument: 0
@@ -3355,7 +3355,7 @@ GameObject:
   - component: {fileID: 369897379}
   - component: {fileID: 369897378}
   m_Layer: 0
-  m_Name: MarketerH_Panel
+  m_Name: MarketerG_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4786,7 +4786,7 @@ GameObject:
   - component: {fileID: 584756784}
   - component: {fileID: 584756783}
   m_Layer: 0
-  m_Name: MarketerH_Button
+  m_Name: MarketerG_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4858,12 +4858,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: MarketerH
           m_BoolArgument: 0
@@ -6575,12 +6575,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: EngineerB
           m_BoolArgument: 0
@@ -6708,12 +6708,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: EngineerD
           m_BoolArgument: 0
@@ -9051,12 +9051,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: EngineerF
           m_BoolArgument: 0
@@ -9186,7 +9186,7 @@ GameObject:
   - component: {fileID: 1044407476}
   - component: {fileID: 1044407475}
   m_Layer: 0
-  m_Name: MarketerG_Panel
+  m_Name: MarketerH_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11237,7 +11237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -11482,12 +11482,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: EngineerE
           m_BoolArgument: 0
@@ -11587,7 +11587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -11696,12 +11696,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: CEO
           m_BoolArgument: 0
@@ -12364,7 +12364,7 @@ GameObject:
   - component: {fileID: 1396385069}
   - component: {fileID: 1396385068}
   m_Layer: 0
-  m_Name: MarketerH
+  m_Name: MarketerG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12404,7 +12404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12733,8 +12733,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13345,7 +13345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -14837,7 +14837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -15958,7 +15958,7 @@ GameObject:
   - component: {fileID: 1752844392}
   - component: {fileID: 1752844391}
   m_Layer: 0
-  m_Name: MarketerG_Button
+  m_Name: MarketerH_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16030,12 +16030,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: MarketerG
           m_BoolArgument: 0
@@ -16491,7 +16491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -16695,25 +16695,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterPanelChanger
   characterPanels:
-  - characterName: EngineerA
+  - characterType: 0
     panel: {fileID: 1825389780}
-  - characterName: EngineerB
+  - characterType: 1
     panel: {fileID: 545041028}
-  - characterName: EngineerC
+  - characterType: 2
     panel: {fileID: 1435155844}
-  - characterName: EngineerD
+  - characterType: 3
     panel: {fileID: 857612480}
-  - characterName: EngineerE
+  - characterType: 4
     panel: {fileID: 347566406}
-  - characterName: EngineerF
+  - characterType: 5
     panel: {fileID: 214005534}
-  - characterName: MarketerH
+  - characterType: 7
     panel: {fileID: 369897376}
-  - characterName: MarketerG
+  - characterType: 6
     panel: {fileID: 1044407473}
-  - characterName: HRI
+  - characterType: 8
     panel: {fileID: 2007371318}
-  - characterName: CEO
+  - characterType: 9
     panel: {fileID: 1179356776}
 --- !u!4 &1824457700
 Transform:
@@ -17185,12 +17185,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1824457699}
         m_TargetAssemblyTypeName: CharacterPanelChanger, Assembly-CSharp
-        m_MethodName: ShowPanel
-        m_Mode: 5
+        m_MethodName: ShowPanelByIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: EngineerC
           m_BoolArgument: 0
@@ -17285,7 +17285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17436,7 +17436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -18426,7 +18426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -18598,7 +18598,7 @@ GameObject:
   - component: {fileID: 2033023651}
   - component: {fileID: 2033023650}
   m_Layer: 0
-  m_Name: MarketerG
+  m_Name: MarketerH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18638,7 +18638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

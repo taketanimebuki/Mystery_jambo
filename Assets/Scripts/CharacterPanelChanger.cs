@@ -10,8 +10,8 @@ public class CharacterPanelChanger : MonoBehaviour
         EngineerD,
         EngineerE,
         EngineerF,
-        MarketerH,
         MarketerG,
+        MarketerH,
         HRI,
         CEO
     }
