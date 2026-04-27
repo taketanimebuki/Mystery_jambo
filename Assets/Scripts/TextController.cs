@@ -19,6 +19,18 @@ public class TextController : MonoBehaviour
 
     void Start()
     {
+        if (dialogueText == null)
+        {
+            Debug.LogWarning("dialogueText が設定されていません");
+            return;
+        }
+
+        if (messages == null || messages.Length == 0)
+        {
+            Debug.LogWarning("messages が設定されていません");
+            return;
+        }
+
         ShowMessage();
     }
 
@@ -27,6 +39,12 @@ public class TextController : MonoBehaviour
         //文字表示中にタップしたら全文表示
         if (isTyping)
         {
+            if (messages == null || messages.Length == 0)
+            {
+                return;
+            }
+
+
             StopCoroutine(typingCoroutine);
             dialogueText.text = messages[currentIndex];
             isTyping = false;
@@ -50,23 +68,31 @@ public class TextController : MonoBehaviour
     }
 
     //タイプライター風に１文字ずつ表示する処理
-    IEnumerator TypeText(string messages)
+    IEnumerator TypeText(string message)
     {
         isTyping = true;
         dialogueText.text = "";
 
-        foreach (char c in messages)
+        foreach (char c in message)
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(typeSpeed);
+            typingCoroutine = null;
         }
 
         isTyping = false;//
     }
     void GoNextPanel()
     {
-        currentPanel.SetActive(false);//今のパネルを非表示
-        nextPanel.SetActive(true);//次のパネルを表示
+        if (currentPanel != null)
+        {
+            currentPanel.SetActive(false);//今のパネルを非表示
+        }
+
+        if (nextPanel != null)
+        {
+            nextPanel.SetActive(true);//次のパネルを表示
+        }
     }
 
 
