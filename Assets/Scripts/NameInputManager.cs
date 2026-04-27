@@ -22,12 +22,12 @@ public class NameInputManager : MonoBehaviour
         {
             Debug.Log("名前が未入力です");
             if (errorText != null)
-                errorText.SetActive(true);
+                errorText.gameObject.SetActive(true);
 
             return;
         }
         if (errorText != null)
-            errorText.SetActive(false);
+            errorText.gameObject.SetActive(false);
 
 
         //保存処理
