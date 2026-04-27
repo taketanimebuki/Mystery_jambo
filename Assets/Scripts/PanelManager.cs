@@ -34,7 +34,10 @@ public class PanelManager : MonoBehaviour
         }
         for (int i = 0; i < panels.Length; i++) //全部切り替え。全パネルに対して選ばれたindex→true(表示)
         {
-            panels[i].SetActive(i == index);
+            if (panels[i] != null)
+            {
+                panels[i].SetActive(i == index);
+            }
         }
 
         currentIndex = index;

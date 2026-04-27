@@ -10,7 +10,7 @@ using TMPro;
 public class NameInputManager : MonoBehaviour
 {
     public TMP_InputField nameInput;
-    public GameObject errorText; //エラーメッセージ表示
+    public TMP_Text errorText; //エラーメッセージ表示
     public SceneLoader sceneLoader;
 
     public void OnClickNext()
