@@ -21,11 +21,11 @@ public class SceneLoader : MonoBehaviour
     }
     public void SceneChangeTrueEnding()
     {
-        SceneManager.LoadScene("TrueEnding");
+        SceneManager.LoadScene("TrueEndingScene");
     }
     public void SceneChangeFalseEnding()
     {
-        SceneManager.LoadScene("FalseEnding");
+        SceneManager.LoadScene("FalseEndingScene");
     }
     public void SceneChangeStart()
     {
