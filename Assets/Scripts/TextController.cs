@@ -55,7 +55,10 @@ public class TextController : MonoBehaviour
         //文字表示中にタップしたら全文表示
         if (isTyping)
         {
-            StopCoroutine(typingCoroutine);
+            if (typingCoroutine != null)
+            {
+                StopCoroutine(typingCoroutine);
+            }
 
             string playerName = PlayerPrefs.GetString("PlayerName", "名無し");
             string message = messages[currentIndex].Replace("{name}", playerName);
