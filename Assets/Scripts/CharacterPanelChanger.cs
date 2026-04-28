@@ -15,7 +15,7 @@ public class CharacterPanelChanger : MonoBehaviour
         HRI,
         CEO
     }
-    
+
     [System.Serializable]
     public class CharacterPanel
     {
@@ -30,18 +30,19 @@ public class CharacterPanelChanger : MonoBehaviour
         HideAllPanels();
     }
 
+
     public void ShowPanel(CharacterType type)
     {
         HideAllPanels();
 
-        foreach(CharacterPanel cp in characterPanels)
+        foreach (CharacterPanel cp in characterPanels)
         {
-            if(cp.panel == null)
+            if (cp.panel == null)
             {
                 continue;
             }
-            
-            if(cp.characterType == type)
+
+            if (cp.characterType == type)
             {
                 cp.panel.SetActive(true);
                 return;
@@ -52,7 +53,7 @@ public class CharacterPanelChanger : MonoBehaviour
 
     public void ShowPanelByIndex(int index)
     {
-        if(index < 0 || index >= System.Enum.GetValues(typeof(CharacterType)).Length)
+        if (index < 0 || index >= System.Enum.GetValues(typeof(CharacterType)).Length)
         {
             Debug.LogWarning("無効なインデックス:" + index);
             return;
@@ -64,9 +65,9 @@ public class CharacterPanelChanger : MonoBehaviour
 
     public void HideAllPanels()
     {
-        foreach(CharacterPanel cp in characterPanels)
+        foreach (CharacterPanel cp in characterPanels)
         {
-            if(cp.panel != null)
+            if (cp.panel != null)
             {
                 cp.panel.SetActive(false);
             }
