@@ -1,16 +1,23 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-//他のシーンでinputした名前を表示する
+
+// 他のシーンでinputした名前を表示する
 public class NameDisplay : MonoBehaviour
 {
-    public TMP_Text nameInput;
+    private const string KEY_PLAYER_NAME = "PlayerName";
+
+    [SerializeField] private TMP_Text nameText;
+
+    [Header("表示テンプレート（{name}が使える）")]
+    [SerializeField] private string message = "{name}さん、調査ありがとう！！";
 
     void Start()
     {
-        string playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+        string playerName = PlayerPrefs.GetString(KEY_PLAYER_NAME, "名無し");
 
-        nameInput.text = playerName;
+        // {name} を置換
+        string displayText = message.Replace("{name}", playerName);
+
+        nameText.text = displayText;
     }
-
 }

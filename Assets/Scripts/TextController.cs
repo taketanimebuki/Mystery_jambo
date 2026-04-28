@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 //背景を変えずにセリフをボタンで変えていく
 public class TextController : MonoBehaviour
 {
+
+    private const string KEY_PLAYER_NAME = "PlayerName";
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private string[] messages;
     [SerializeField] private float typeSpeed = 0.05f;
@@ -60,10 +62,12 @@ public class TextController : MonoBehaviour
                 StopCoroutine(typingCoroutine);
             }
 
+            string playerName = PlayerPrefs.GetString(KEY_PLAYER_NAME, "名無し");
+            string message = messages[currentIndex].Replace("{name}", playerName);
 
-            dialogueText.text = messages[currentIndex];
+            dialogueText.text = message;
+
             isTyping = false;
-            typingCoroutine = null;
             return;
         }
         //次の文章へ
@@ -79,8 +83,11 @@ public class TextController : MonoBehaviour
     }
     void ShowMessage()
     {
-        //Coroutineでタイプライター表示を開始
-        typingCoroutine = StartCoroutine(TypeText(messages[currentIndex]));
+        string playerName = PlayerPrefs.GetString(KEY_PLAYER_NAME, "名無し");
+
+        string message = messages[currentIndex].Replace("{name}", playerName);
+
+        typingCoroutine = StartCoroutine(TypeText(message));
     }
 
     //タイプライター風に１文字ずつ表示する処理
