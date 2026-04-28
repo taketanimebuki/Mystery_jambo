@@ -13,14 +13,6 @@ public class NameInputManager : MonoBehaviour
     public TMP_Text errorText; //エラーメッセージ表示
     public SceneLoader sceneLoader;
 
-    void Start()
-    {
-        if (errorText != null)
-        {
-            errorText.gameObject.SetActive(false);
-        }
-    }
-
     public void OnClickNext()
     {
         string playerName = nameInput.text.Trim();
