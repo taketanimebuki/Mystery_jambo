@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 //背景を変えずにセリフをボタンで変えていく
 public class TextController : MonoBehaviour
 {
+
+    private const string KEY_PLAYER_NAME = "PlayerName";
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private string[] messages;
     [SerializeField] private float typeSpeed = 0.05f;
@@ -60,7 +62,7 @@ public class TextController : MonoBehaviour
                 StopCoroutine(typingCoroutine);
             }
 
-            string playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+            string playerName = PlayerPrefs.GetString(KEY_PLAYER_NAME, "名無し");
             string message = messages[currentIndex].Replace("{name}", playerName);
 
             dialogueText.text = message;
@@ -81,7 +83,7 @@ public class TextController : MonoBehaviour
     }
     void ShowMessage()
     {
-        string playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+        string playerName = PlayerPrefs.GetString(KEY_PLAYER_NAME, "名無し");
 
         string message = messages[currentIndex].Replace("{name}", playerName);
 
