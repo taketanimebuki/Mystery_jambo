@@ -46,12 +46,17 @@ public class CharacterPanelChanger : MonoBehaviour
                 cp.panel.SetActive(true);
                 
                 CharacterConversationManager conversation =
-                cp.panel.GetComponent<CharacterConversationManager>();
+                cp.panel.GetComponentInChildren<CharacterConversationManager>(true);
 
                 if(conversation != null)
                 {
                     conversation.ShowFirstComment();
                 }
+                else
+                {
+                    Debug.LogWarning("CharacterConversationManager が見つかりません: " + type);
+                }
+
                 return;
             }
         }

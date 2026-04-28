@@ -23,11 +23,20 @@ public class CharacterConversationManager : MonoBehaviour
     [TextArea(2,5)]
     public string answer4;
 
-    void Start()
+    void OnEnable()
+    {
+        ShowFirstComment();
+    }
+
+    public void ShowFirstComment()
     {
         if(characterCommentText != null)
         {
-            characterCommentText.text = "";
+            characterCommentText.text = firstComment;
+        }
+        else
+        {
+            Debug.LogWarning("Character Comment Texrが設定されていません");
         }
     }
 
@@ -59,21 +68,5 @@ public class CharacterConversationManager : MonoBehaviour
             return;
         }
         characterCommentText.text = answer;
-    }
-
-    void OnEnable()
-    {
-        if(characterCommentText != null)
-        {
-            characterCommentText.text = firstComment;
-        }
-    }
-
-    public void ShowFirstComment()
-    {
-        if(characterCommentText != null)
-        {
-            characterCommentText.text = firstComment;
-        }
     }
 }
