@@ -596,9 +596,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1171677487}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1171677488}
+        m_TargetAssemblyTypeName: NameInputManager, Assembly-CSharp
+        m_MethodName: OnClickNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -784,8 +784,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u203B\u540D\u524D\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63650fe52eadb4253a670e0c99f6b704, type: 2}
-  m_sharedMaterial: {fileID: 4506829096259707498, guid: 63650fe52eadb4253a670e0c99f6b704, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: acc9364d67d584fb0acd07b489fa9f4c, type: 2}
+  m_sharedMaterial: {fileID: 3407549413164584719, guid: acc9364d67d584fb0acd07b489fa9f4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1556,7 +1556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NameInputManager
   nameInput: {fileID: 1294579615}
-  errorText: {fileID: 582393043}
+  errorText: {fileID: 582393045}
   sceneLoader: {fileID: 1976985056}
 --- !u!4 &1171677489
 Transform:

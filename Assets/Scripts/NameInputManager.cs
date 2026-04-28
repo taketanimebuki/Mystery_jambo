@@ -1,48 +1,45 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-
-//  ボタン押す
-// 入力チェック
-// 空ならエラー表示
-// OKなら保存して遷移
 
 public class NameInputManager : MonoBehaviour
 {
-    public TMP_InputField nameInput;
-    public TMP_Text errorText; //エラーメッセージ表示
-    public SceneLoader sceneLoader;
+    private const string KEY_PLAYER_NAME = "PlayerName";
+
+    [SerializeField] private TMP_InputField nameInput;
+    [SerializeField] private TMP_Text errorText;
+    [SerializeField] private SceneLoader sceneLoader;
+
+    void Awake()
+    {
+        if (errorText != null)
+        {
+            errorText.gameObject.SetActive(false);
+        }
+    }
 
     public void OnClickNext()
     {
+        if (nameInput == null) return;
+
         string playerName = nameInput.text.Trim();
+        bool isEmpty = string.IsNullOrEmpty(playerName);
 
-        //空orスペースだけチェック
-        if (string.IsNullOrEmpty(playerName))
-        {
-            Debug.Log("名前が未入力です");
-            if (errorText != null)
-                errorText.gameObject.SetActive(true);
-
-            return;
-        }
         if (errorText != null)
-            errorText.gameObject.SetActive(false);
+            errorText.gameObject.SetActive(isEmpty);
 
+        if (isEmpty) return;
 
-        //保存処理
-        PlayerPrefs.SetString("PlayerName", playerName);
+        PlayerPrefs.SetString(KEY_PLAYER_NAME, playerName);
         PlayerPrefs.Save();
-        Debug.Log("保存した名前: " + playerName);
 
-        //Openingシーンに画面遷移
         GoNext();
-
     }
+
     void GoNext()
     {
-        sceneLoader.SceneChangeOpening();
+        if (sceneLoader != null)
+        {
+            sceneLoader.SceneChangeOpening();
+        }
     }
-
-
 }
