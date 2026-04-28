@@ -44,6 +44,14 @@ public class CharacterPanelChanger : MonoBehaviour
             if(cp.characterType == type)
             {
                 cp.panel.SetActive(true);
+                
+                CharacterConversationManager conversation =
+                cp.panel.GetComponent<CharacterConversationManager>();
+
+                if(conversation != null)
+                {
+                    conversation.ShowFirstComment();
+                }
                 return;
             }
         }
