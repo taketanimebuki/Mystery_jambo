@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 //タイプライターのような表示
 //背景を変えずにセリフをボタンで変えていく
 public class TextController : MonoBehaviour
@@ -9,9 +10,22 @@ public class TextController : MonoBehaviour
     [SerializeField] private string[] messages;
     [SerializeField] private float typeSpeed = 0.05f;
 
+    public enum EndAction
+    {
+        ShowPanel,
+        LoadScene
+    }
+
     [Header("最後まで行った後に表示するパネル")]
+    [SerializeField] private EndAction endAction = EndAction.ShowPanel;
+
+    [Header("パネル切り替え用")]
     [SerializeField] private GameObject currentPanel;
     [SerializeField] private GameObject nextPanel;
+
+    [Header("シーン遷移用")]
+    [SerializeField] private string nextSceneName;
+
 
     private int currentIndex = 0;
     private bool isTyping = false;
@@ -19,6 +33,8 @@ public class TextController : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(this.gameObject.name);
+
         if (dialogueText == null)
         {
             Debug.LogWarning("dialogueText が設定されていません");
@@ -39,15 +55,15 @@ public class TextController : MonoBehaviour
         //文字表示中にタップしたら全文表示
         if (isTyping)
         {
-            if (messages == null || messages.Length == 0)
+            if (typingCoroutine != null)
             {
-                return;
+                StopCoroutine(typingCoroutine);
             }
 
 
-            StopCoroutine(typingCoroutine);
             dialogueText.text = messages[currentIndex];
             isTyping = false;
+            typingCoroutine = null;
             return;
         }
         //次の文章へ
@@ -55,7 +71,7 @@ public class TextController : MonoBehaviour
         //最後まで行ったら次のパネルへ
         if (currentIndex >= messages.Length)
         {
-            GoNextPanel();
+            DoEndAction();
             return;
         }
         ShowMessage();
@@ -77,10 +93,24 @@ public class TextController : MonoBehaviour
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(typeSpeed);
-            typingCoroutine = null;
         }
 
-        isTyping = false;//
+        isTyping = false;
+        typingCoroutine = null;
+    }
+
+    void DoEndAction()
+    {
+        switch (endAction)
+        {
+            case EndAction.ShowPanel:
+                GoNextPanel();
+                break;
+
+            case EndAction.LoadScene:
+                GoNextScene();
+                break;
+        }
     }
     void GoNextPanel()
     {
@@ -93,6 +123,15 @@ public class TextController : MonoBehaviour
         {
             nextPanel.SetActive(true);//次のパネルを表示
         }
+    }
+    void GoNextScene()
+    {
+        if (string.IsNullOrEmpty(nextSceneName))
+        {
+            Debug.LogWarning("次のシーンが設定されてません");
+            return;
+        }
+        SceneManager.LoadScene(nextSceneName);
     }
 
 
