@@ -30,10 +30,13 @@ public class TextController : MonoBehaviour
     private int currentIndex = 0;
     private bool isTyping = false;
     private Coroutine typingCoroutine;
+    private string playerName;
 
     void Start()
     {
         Debug.Log(this.gameObject.name);
+        playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+
 
         if (dialogueText == null)
         {
@@ -46,6 +49,9 @@ public class TextController : MonoBehaviour
             Debug.LogWarning("messages が設定されていません");
             return;
         }
+
+        playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+
 
         ShowMessage();
     }
@@ -60,8 +66,11 @@ public class TextController : MonoBehaviour
                 StopCoroutine(typingCoroutine);
             }
 
+            string playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+            string message = messages[currentIndex].Replace("{name}", playerName);
 
-            dialogueText.text = messages[currentIndex];
+            dialogueText.text = message;
+
             isTyping = false;
             typingCoroutine = null;
             return;
@@ -79,8 +88,12 @@ public class TextController : MonoBehaviour
     }
     void ShowMessage()
     {
-        //Coroutineでタイプライター表示を開始
-        typingCoroutine = StartCoroutine(TypeText(messages[currentIndex]));
+        string playerName = PlayerPrefs.GetString("PlayerName", "名無し");
+
+        string message = messages[currentIndex].Replace("{name}", playerName);
+
+        typingCoroutine = StartCoroutine(TypeText(message));
+
     }
 
     //タイプライター風に１文字ずつ表示する処理

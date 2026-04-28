@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 238804340}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1314889306}
+        m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
+        m_MethodName: ShowNextPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &238804340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +336,7 @@ GameObject:
   - component: {fileID: 284799107}
   - component: {fileID: 284799106}
   - component: {fileID: 284799105}
+  - component: {fileID: 284799108}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -406,6 +419,50 @@ Transform:
   - {fileID: 1887021238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &284799108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284799104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &516677911
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,19 +973,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943550587}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.31875, y: 1.31875, z: 1.31875}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1104458754}
   - {fileID: 1191983163}
-  m_Father: {fileID: 1314889302}
+  m_Father: {fileID: 1887021238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -612, y: -282.7962}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943550589
 MonoBehaviour:
@@ -1428,6 +1485,8 @@ GameObject:
   - component: {fileID: 1314889302}
   - component: {fileID: 1314889304}
   - component: {fileID: 1314889303}
+  - component: {fileID: 1314889305}
+  - component: {fileID: 1314889306}
   m_Layer: 5
   m_Name: FalseEnding
   m_TagString: Untagged
@@ -1448,7 +1507,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 257754609}
-  - {fileID: 943550588}
   m_Father: {fileID: 1887021238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1494,6 +1552,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314889301}
   m_CullTransparentMesh: 1
+--- !u!114 &1314889305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314889301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5940b3b6fd59649ec938127b91841254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FalseEndingCharacterDisplay
+  characterImage: {fileID: 257754610}
+  dialogueText: {fileID: 516677913}
+  characterImages:
+  - characterType: 1
+    texture: {fileID: 2800000, guid: 2f1a46260e45949b0bcf056af6950630, type: 3}
+    message: "\u79C1\u3058\u3083\u306A\u3044\u3088\uFF1F\uFF01"
+  - characterType: 2
+    texture: {fileID: 2800000, guid: c6bc7a4b3788a408caef16522097a422, type: 3}
+    message: "\u3048\u3001\u4FFA\uFF1F"
+  - characterType: 3
+    texture: {fileID: 2800000, guid: ea399a677ebfe4b69ac974a3f563d17b, type: 3}
+    message: "\u9055\u3044\u307E\u3059..."
+  - characterType: 4
+    texture: {fileID: 2800000, guid: f7271dcf8d96540dbb2c7ee9d26ac910, type: 3}
+    message: "\u4FFA\u3058\u3083\u306D\u3088\u304A\u7B11"
+  - characterType: 5
+    texture: {fileID: 2800000, guid: f75f836db5ec146aebb09bd3228fad2a, type: 3}
+    message: "\u79C1\u3058\u3083\u306A\u3044\u3067\u3059\uFF01"
+  - characterType: 7
+    texture: {fileID: 2800000, guid: f593e28ce6f9444ea9aedb6d054d5411, type: 3}
+    message: "\u9055\u3046\u3088\u301C\u3075\u3075\u3075"
+  - characterType: 6
+    texture: {fileID: 2800000, guid: b27d5001296a4435a843cf49344add2a, type: 3}
+    message: ".......\u4FFA\uFF1F"
+  - characterType: 8
+    texture: {fileID: 2800000, guid: ce7a0620d1c2b4563ba2c7cfd5c635d9, type: 3}
+    message: "\u79C1\u3058\u3083\u306A\u3044\uFF01\uFF01\uFF01"
+  - characterType: 9
+    texture: {fileID: 2800000, guid: d3127b5139766450e8459604fce738f9, type: 3}
+    message: "\u306A\u3093\u3067\u3084\u306D\u3093\uFF01\uFF01\u7B11"
+--- !u!114 &1314889306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314889301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4d549cd4a7a41c5aca46839fa439c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PanelManager
+  panels:
+  - {fileID: 1314889301}
+  - {fileID: 943550587}
 --- !u!1 &1351273104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1798,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1314889302}
+  - {fileID: 943550588}
   m_Father: {fileID: 284799107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
