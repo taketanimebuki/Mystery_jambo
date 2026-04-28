@@ -2229,6 +2229,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8419315321919110367, guid: c91b0a93197644667b29e31735d313ea, type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: -30.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419315321919110367, guid: c91b0a93197644667b29e31735d313ea, type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: -22.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419315321919110367, guid: c91b0a93197644667b29e31735d313ea, type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: -33.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419315321919110367, guid: c91b0a93197644667b29e31735d313ea, type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: -37.8
+      objectReference: {fileID: 0}
     - target: {fileID: 9028440872558406241, guid: c91b0a93197644667b29e31735d313ea, type: 3}
       propertyPath: m_fontAsset
       value: 
