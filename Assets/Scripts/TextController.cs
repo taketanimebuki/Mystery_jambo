@@ -84,7 +84,7 @@ public class TextController : MonoBehaviour
     }
 
     //タイプライター風に１文字ずつ表示する処理
-    IEnumerator TypeText(string message)
+    private IEnumerator TypeText(string message)
     {
         isTyping = true;
         dialogueText.text = "";
@@ -112,7 +112,7 @@ public class TextController : MonoBehaviour
                 break;
         }
     }
-    void GoNextPanel()
+    private void GoNextPanel()
     {
         if (currentPanel != null)
         {
@@ -124,7 +124,7 @@ public class TextController : MonoBehaviour
             nextPanel.SetActive(true);//次のパネルを表示
         }
     }
-    void GoNextScene()
+    private void GoNextScene()
     {
         if (string.IsNullOrEmpty(nextSceneName))
         {
