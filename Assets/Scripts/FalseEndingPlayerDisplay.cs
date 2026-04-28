@@ -9,12 +9,17 @@ public class FalseEndingCharacterDisplay : MonoBehaviour
         public CharacterPanelChanger.CharacterType characterType;
         public Sprite sprite;
     }
+
+    //表示等Image
     [SerializeField] private Image CharacterImage;
+    //キャラごとの画像一覧
     [SerializeField] private CharacterImage[] characterImages;
+    //キーを定数化
+    private const string KEY_SELECTED_CHARACTER = "SelectedCharacter"
 
     void Start()
     {
-        int savedIndex = PlayerPrefs.GetInt("SelectedCharacter", -1);
+        int savedIndex = PlayerPrefs.GetInt(KEY_SELECTED_CHARACTER, -1);
         if (savedIndex == -1)
         {
             Debug.LogWarning("選ばれたキャラが保存されていません");
@@ -23,11 +28,17 @@ public class FalseEndingCharacterDisplay : MonoBehaviour
         CharacterPanelChanger.CharacterType selectType =
         (CharacterPanelChanger.CharacterType)savedIndex;
 
-        foreach (Character ci in characterImages)
+        //nullチェック（安全対策）
+        if (characterImages == null)
+        {
+            Debug.LogWarning("imageが設定されていません");
+            return;
+        }
+        foreach (CharacterImege ci in characterImages)
         {
             if (ci.characterType == selectType)
             {
-                characterImages.sprite = ci.sprite;
+                characterImage.sprite = ci.sprite;
                 return;
             }
         }
