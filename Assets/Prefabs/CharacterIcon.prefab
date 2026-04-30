@@ -200,8 +200,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EngineerA
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ea7d416c96c814832a9bf7d2dc9ea0bd, type: 2}
+  m_sharedMaterial: {fileID: 263999134641941507, guid: ea7d416c96c814832a9bf7d2dc9ea0bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
